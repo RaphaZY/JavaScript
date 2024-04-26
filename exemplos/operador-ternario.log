@@ -1,0 +1,9 @@
+
+x = 5
+5
+x >= 5 ? "x é maior ou igual a 5" : "x é menor que 5"
+'x é maior ou igual a 5'
+x = 2
+2
+x >= 5 ? "x é maior ou igual a 5" : "x é menor que 5"
+'x é menor que 5'

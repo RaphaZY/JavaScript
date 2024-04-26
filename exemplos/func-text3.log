@@ -1,0 +1,15 @@
+imprimir=(text,x)=> {
+    str = ""
+    for(i = 1; i <= x; i++)
+        str = str + text
+    console.log(str);
+}
+(text,x)=> {
+    str = ""
+    for(i = 1; i <= x; i++)
+        str = str + text
+    console.log(str);
+}
+imprimir("ola - 2 ", 4)
+VM1097:5 ola - 2 ola - 2 ola - 2 ola - 2 
+undefined

@@ -1,0 +1,10 @@
+
+form_ok = true
+true
+if(form_ok) console.log("Dados serão enviados!"); else alert("Preenchimento incorreto!")
+VM2109:1 Dados serão enviados!
+undefined
+form_ok = false
+false
+if(form_ok) console.log("Dados serão enviados!"); else alert("Preenchimento incorreto!")
+undefined

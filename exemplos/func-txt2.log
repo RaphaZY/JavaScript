@@ -1,0 +1,14 @@
+function imprimir(text,x = 1) {
+    str = ""
+
+    for(i = 1; i <= x; i++)
+        str = str + text
+    console.log(str);
+}
+undefined
+imprimir("ola - 2")
+VM845:6 ola - 2
+undefined
+imprimir("ola - 2", 2)
+VM845:6 ola - 2ola - 2
+undefined

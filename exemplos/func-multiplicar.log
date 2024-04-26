@@ -1,0 +1,14 @@
+function multiplicar(a,b) {
+    return a * b
+}
+undefined
+multiplicar(2,3)
+6
+multiplicar('1',21321321)
+21321321
+multiplicar('2',21321321)
+42642642
+multiplicar(multiplicar(2,1),2)
+4
+multiplicar('2'*2)
+NaN

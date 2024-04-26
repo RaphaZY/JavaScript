@@ -1,0 +1,13 @@
+function imprimir(text,x) {
+    str = ""
+    if(x == undefined)
+        x = 1
+
+    for(i = 1; i <= x; i++)
+        str = str + text
+    console.log(str);
+}
+undefined
+imprimir("ola - ",3)
+VM791:8 ola - ola - ola - 
+undefined

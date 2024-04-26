@@ -1,0 +1,37 @@
+
+nt1 = 8 
+8
+nt2 = 7
+7
+nt3 = 4
+4
+nt4 = 6
+6
+media = (nt1 + nt2 + nt3 + nt4) / 4
+6.25
+if(media < 4){
+    console.log("Aluno reprovado")
+} else if(4 <= meida && media < 7){
+    console.log("Aluno em recuperação")
+} else console.log("Aluno aprovado")
+VM2843:3 Uncaught ReferenceError: meida is not defined
+    at <anonymous>:3:16
+(anonymous) @ VM2843:3
+if(media < 4){
+    console.log("Aluno reprovado")
+} else if(4 <= media && media < 7){
+    console.log("Aluno em recuperação")
+} else console.log("Aluno aprovado")
+VM2850:4 Aluno em recuperação
+undefined
+nt3 = 8
+8
+media = (nt1 + nt2 + nt3 + nt4) / 4
+7.25
+if(media < 4){
+    console.log("Aluno reprovado")
+} else if(4 <= media && media < 7){
+    console.log("Aluno em recuperação")
+} else console.log("Aluno aprovado")
+VM2882:5 Aluno aprovado
+undefined

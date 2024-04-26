@@ -1,0 +1,50 @@
+x = 5 
+5
+switch (x){
+    case 1: console.log("Bloco 1"); break;
+}
+undefined
+switch (x){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;    
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco Alternativo"); break;
+}
+VM3444:6 Bloco 5
+undefined
+x = 10
+10
+switch (x){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;    
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco Alternativo"); break;
+}
+VM3471:7 Bloco Alternativo
+undefined
+switch (x){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;    
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco Alternativo"); break;
+        }
+VM3480:7 Bloco Alternativo
+undefined
+x = 5 
+5
+switch (x){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;    
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco Alternativo"); break;
+        }
+VM3527:6 Bloco 5
+undefined
