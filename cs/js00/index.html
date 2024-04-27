@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS00 - Introdução ao JavaScript</title>
+    <!-- script arquivo externo -->
+    <script src="./js/functions.js"></script>
+    <!-- script local no head -->
+    <script type="text/javascript">
+        alert("Olá Mundo! Mensagem gerada por JavaScript na tag <head>. ");
+    </script>
+</head>
+<body>
+    <div style="padding: 5% 5% 5% ;text-align: center;background-color: crimson; color:rgb(242, 255, 58)">
+        <h1 style="font-family:cursive; font-size: 30px">Introdução ao JavaScript</h1>
+    </div>
+    <input type="submit" onclick="mensagem()" name="msg" id="msg" value="Mensagem">
+
+    <!-- script local no body -->
+    <script>
+        alert("Mensagem gerada por JavaScript na tag <body>. ");
+    </script>
+</body>
+</html>
