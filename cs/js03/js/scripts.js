@@ -70,10 +70,12 @@ function excluiGeografia(){
 function insereImagem(){
     //cria novo objeto Imagem
     var img = document.createElement('img');
+    var text = document.createElement('h2');
     //insere o caminho da imagem
     //no objeto img
     img.src = './img/rio.jpg';
+    text = 'Rio de Janeiro';
     //remove o rpimeiro elemento da lista
-    imagem.appendChild(img);  
+    imagem.appendChild(img); 
  
 }

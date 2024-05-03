@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS05 - Ações Assincronas e Timers em JavaScript</title>
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body onload="cicloVermelho()">
+    <div id="conteiner">
+        <!-- relogio -->
+        <div id="clock">
+            <h2>Hora do Sistema: <samp id="hora"></samp></h2>
+        </div>
+
+        <div id="cronometro">
+            <h2>Contador: <samp id="contador"></samp></h2>
+            <button onclick="ligaTimer()" id="liga" name="liga">Ligar Timer</button>
+            <button onclick="desligaTimer()" id="desliga" name="desliga" disabled>Desligar Timer</button>
+        </div>
+
+        <div id="semaforo">
+            <h1>Semáforoutilizando JavaScript</h1>
+            <div class="semi">
+                <div id="vermelho"></div>
+                <div id="amarelo"></div>
+                <div id="verde"></div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- cronometro -->
+    
+    <!-- script relogio -->
+    <script>
+        var hora = setInterval(myClock,1000);
+        function myClock(){
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById('hora').innerHTML = t;
+        }
+    </script>
+</body>
+</html>
