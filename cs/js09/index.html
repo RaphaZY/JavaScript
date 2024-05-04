@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS09 - </title>
-    <script src="./js/scripts.js"></script>
+    <title>JS09 - Manipulando XML com JavaScript</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
-<body onload="inicializa()">
-    <h1>hiiiiii, oni-chaaaaaaaannnnnnnnn</h1>
+<body>
+    <h1>hiiiiii, oniiiiiii-chaaaaaaaannnnnnnnn</h1>
+
+    <script>
+        
+        //cria uma requisição xml
+        if(window.XMLHttpRequest){
+            xmlhttp = new XMLHttpRequest();
+        } else { //compatibilidade com I.E. 
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        //abre o arquivo xml utilizando o metodo get
+        xmlhttp.open("GET","./xml/catalogo.xml",false);
+        // envia o conteudo
+        xmlhttp.send();
+        // especifica o tipo de retorno
+        xmlDoc = xmlhttp.responseXML
+
+
+
+    </script>
 </body>
 </html>
