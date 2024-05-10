@@ -1,7 +1,7 @@
 var MIN_COMPRIMENTO = 50;
-var MAX_COMPRIMENTO = 600;
-var INCREMENTO = 100;
-var TEMPO = 50;
+var MAX_COMPRIMENTO = 10000;
+var INCREMENTO = 10;
+var TEMPO = 5000;
 
 var timeout;
 

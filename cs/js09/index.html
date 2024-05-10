@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <h1>hiiiiii, oniiiiiii-chaaaaaaaannnnnnnnn</h1>
 
     <script>
         
@@ -23,8 +22,27 @@
         xmlhttp.send();
         // especifica o tipo de retorno
         xmlDoc = xmlhttp.responseXML
-
-
+        //cria cabeçalho
+        document.write("<table border='1'>");
+        document.write("<caption>Catálogo de Discos</caption>");
+        document.write("<td id =\"cabecalho\">Artista:</td><td id =\"cabecalho\">Disco:</td>");
+        //cria o objeto x que recebe os objetos CD do XML
+        let x = xmlDoc.getElementsByTagName("CD");
+        // lê os valores dos objetos CD e os  insere
+        // no corpo da tabela
+        for(let i = 0; i < x.length; i++){
+            //cria linha e a célula
+            document.write("<tr><td>");
+            //insere o conteudo da primeira celula e inicia
+            //a outra
+            document.write(x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue);
+            document.write("</td><td>");
+            document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+            document.write("</td></tr>");
+        
+        }
+        // finaliza a tabela
+        document.write("</table>")
 
     </script>
 </body>
