@@ -2,12 +2,31 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>js11 - &lt;canvas&gt;</title>
+    <title>js12 - SVG</title>
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/funcoes.js"></script>
+    <script src="./"></script>
   </head>
-  <body onload="">
-    
-    
+  <body>
+    <div id="container">
+      <div id="svg">
+        <h2>Imagem PNG (Bitmap)</h2>
+        <img class="imgcenter" src="./img/img2.png" alt="PNG">
+        <br>
+        <h2>Imagem SVG (Imagem Vetorial)</h2>
+        <img class="imgcenter" src="./img/img2.svg" alt="SVG">
+      
+        <h2>SVG embutido no HTML - &lt;svg&gt;</h2>
+        <svg class="svgcenter" width="205" height="105">
+          <rect width="200" height="100" style="fill:#009D6B; stroke-width:10; stroke: #326A78;"/>
+          Infelizmente seu Navegador não suporta SVG.
+        </svg>
+        <svg class="svgcenter" height="100" width="900">
+          <ellipse cx="120" cy="40" rx="85" ry="25" style="fill: #326A78;"/>
+          <ellipse cx="110" cy="40" rx="65" ry="15" style="fill: #009D6b"/>
+          Infelizmente seu Navegador não suporta SVG
+        </svg>
+      
+      </div>
+    </div>    
   </body>
 </html>

@@ -34,7 +34,7 @@ function smile(){
         const ctx = canvas.getContext('2d');
         ctx.beginPath();
         
-        ctx.arc(75,75,50,0, Math.PI * 2 , true);
+        ctx.arc(75,75,50,0,         2 , true);
 
         ctx.moveTo(110,75);
         ctx.arc(75,75,35,0,Math.PI, false);
