@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jasmine Test</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/testescalc.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.css"></link>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.6.0/boot.js"></script>
+  </head>
+  <body>
+    <script>
+      const x = new Calculadora;
+
+      describe('Object', function () {
+      it('x is object', function () {
+          expect(x).toEqual(jasmine.any(Object));
+      })
+      });
+
+      describe('Number', function () {
+      it('x is number', function () {
+          expect(x.somar(2,2)).toEqual(jasmine.any(Number));
+      })
+      });
+
+      describe('somar function', function () {
+      it('2 + 2 should equal 4', function () {
+          expect(x.somar(2,2)).toBe(4);
+          expect(x.somar(2,4)).not.toBe(4);
+      })
+      });
+
+      describe('subtrair function', function () {
+      it('10 - 2 should equal 8', function () {
+          expect(x.subtrair(10,2)).toBe(8);
+          expect(x.subtrair(1,7)).not.toBe(-8);
+      })
+      });
+
+      describe('multiplicar function', function () {
+      it('10 * 2 should equal 100', function () {
+          expect(x.multiplicar(10,2)).toBe(20);
+          expect(x.multiplicar(5,5)).not.toBe(35);
+      })
+      });
+
+      describe('dividir function', function () {
+      it('10 / 2 should equal 5', function () {
+          expect(x.dividir(10,2)).toBe(5);
+          expect(x.dividir(5,0)).not.toBe(35);
+      })
+      });
+
+      describe('exponenciação function', function () {
+      it('10 ** 2 should equal 100', function () {
+          expect(x.exponenciacao(10,2)).toBe(100);
+          expect(x.exponenciacao(5,0)).not.toBe(35);
+      })
+      });
+
+      describe('raiz function', function () {
+      it('V100 should equal 10', function () {
+          expect(x.raiz(100)).toBe(10);
+          expect(x.raiz(5)).not.toBe(35);
+      })
+      });
+
+
+
+
+    </script>
+  </body>
+</html>
